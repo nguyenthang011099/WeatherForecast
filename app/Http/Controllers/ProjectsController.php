@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Haiduong;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -33,7 +34,9 @@ class ProjectsController extends Controller
 
     }
     public function show(){
-        $haiduongs=DB::table('haiduongs');
+        //$haiduongs=DB::table('haiduongs');
+        //call follow Model
+        $haiduongs=Haiduong::all();
         return view('show',['haiduongs'=>$haiduongs]);
     }
 }

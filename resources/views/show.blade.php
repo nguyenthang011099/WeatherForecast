@@ -18,6 +18,16 @@
             Temperature
         </th>
     </tr>
+    @foreach($haiduongs as $haiduong)
+        <tr>
+            <td>
+                {{$haiduong->Humid}}
+            </td>
+            <td>
+                {{$haiduong->Temperature}}
+            </td>
+        </tr>
+    @endforeach
 </table>
 </body>
 </html>
