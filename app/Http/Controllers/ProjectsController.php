@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+//must call namespace App\Haiduong thi moi ok
 use App\Haiduong;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
