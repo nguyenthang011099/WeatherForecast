@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProjectsController extends Controller
 {
     public function index(){
-       // $projects= Project::all();
+        $projects= haiduongs::all();
         return view('projects.index',compact('projects'));
     }
 
@@ -20,7 +21,7 @@ class ProjectsController extends Controller
         return view('projects.create');
     }
     public function store(){
-        $project= new Weather();
+        $project= DB::table('haiduongs');
         $project->Temperature = request('Temperature');
         $project->Humid= request('Humid');
         $project->Wind = request('Wind');
@@ -28,5 +29,11 @@ class ProjectsController extends Controller
 
         $project->save();
 
+        return redirect('/view');
+
+    }
+    public function show(){
+        $haiduongs=DB::table('haiduongs');
+        return view('show',['haiduongs'=>$haiduongs]);
     }
 }
