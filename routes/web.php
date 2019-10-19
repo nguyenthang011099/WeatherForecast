@@ -15,3 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/view','ProjectsController@view');
+Route::get('/index','ProjectsController@index');
+Route::get('/create','ProjectsController@create');
+Route::post('/view','ProjectsController@store');
+
