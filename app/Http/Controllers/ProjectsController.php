@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 //must call namespace App\Haiduong thi moi ok
 use App\Haiduong;
 
+use App\Phutho;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -39,5 +40,9 @@ class ProjectsController extends Controller
         //call follow Model
         $haiduongs=Haiduong::all();
         return view('show',['haiduongs'=>$haiduongs]);
+    }
+    public function showphutho(){
+        $phuthos=Phutho::all();
+        return view('showphutho',['phuthos'=>$phuthos]);
     }
 }

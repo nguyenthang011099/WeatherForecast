@@ -19,3 +19,4 @@ Route::get('/index','ProjectsController@index');
 Route::get('/create','ProjectsController@create');
 Route::post('/view','ProjectsController@store');
 Route::get('/show','ProjectsController@show');
+Route::get('/showphutho','ProjectsController@showphutho');
