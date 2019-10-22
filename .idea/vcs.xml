@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/IT3090" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LaravelCharts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Simple Dom" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Simple_Dom" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Students-MySQL" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Weather" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/laravel-shop" vcs="Git" />
+  </component>
+</project>
